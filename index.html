@@ -37,20 +37,15 @@
 <body>
     <div class="container">
         <h2>Hochzeitsfoto-Upload</h2>
-        <p>Wir freuen uns über eure Hochzeitsfotos! Bitte stimme der Nutzung der Galerie zu.</p>
-        <input type="checkbox" id="consent"> Ich stimme zu
-        <br>
-        <button id="uploadBtn" disabled onclick="upload()">Jetzt hochladen</button>
+        <p>Wir freuen uns über eure Hochzeitsfotos! Bitte klickt auf den Button, um die Bilder hochzuladen.</p>
+        <button onclick="upload()">Jetzt hochladen</button>
     </div>
     
     <script>
-        document.getElementById('consent').addEventListener('change', function() {
-            document.getElementById('uploadBtn').disabled = !this.checked;
-        });
-
         function upload() {
             window.location.href = "https://www.dropbox.com/request/d8AzxthoP6MgGMaTBOPN";
         }
     </script>
 </body>
 </html>
+
